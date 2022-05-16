@@ -5,16 +5,21 @@ from rest_framework import serializers
 class MaterialSerializer(serializers.ModelSerializer):
     class Meta:
         model = Material
-        fields = ('name',)
+        fields = '__all__'
         read_only_fields = ('id',)
 
 
 class TrashSerializer(serializers.ModelSerializer):
-    material = MaterialSerializer(many=True)
+    material = serializers.PrimaryKeyRelatedField(
+        many=True,
+        queryset=Material.objects.all()
+    )
 
     class Meta:
         model = Trash
-        fields = ('name', 'trash_container',
-                  'material',
-                  'created_at', 'updated_at')
+        fields = '__all__'
         read_only_fields = ('id',)
+
+
+class TrashDetailSerializer(TrashSerializer):
+    material = MaterialSerializer(many=True)

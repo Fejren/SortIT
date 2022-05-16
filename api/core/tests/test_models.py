@@ -20,7 +20,7 @@ class ModelTests(TestCase):
         material = sample_material(name='glass')
         trash = models.Trash.objects.create(
             name='Bootle',
-            trash_container='black'
+            trash_container='mixed waste'
         )
         trash.material.set([material])
         self.assertEqual(str(trash), trash.name)

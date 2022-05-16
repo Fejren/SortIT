@@ -1,5 +1,4 @@
-from django.shortcuts import render
-from rest_framework import viewsets, mixins, status
+from rest_framework import viewsets
 from core.models import Trash, Material
 
 from trash import serializers
@@ -14,14 +13,9 @@ class TrashViewSet(viewsets.ModelViewSet):
     queryset = Trash.objects.all()
     serializer_class = serializers.TrashSerializer
 
-    def get_queryset(self):
+    def get_serializer_class(self):
+        # Return appropriate serializer class
+        if self.action == 'retrieve':
+            return serializers.TrashDetailSerializer
+
         return self.serializer_class
-
-    # def perform_create(self, serializer):
-    #     # Create new trash
-    #     serializer.save()
-    #
-    # def perform_update(self, serializer):
-    #     # Update new trash
-    #     serializer.save()
-

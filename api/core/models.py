@@ -22,7 +22,7 @@ class Trash(models.Model):
         ('glass', 'Glass'),
         ('plastic and metals', 'Plastic and metals'),
     ]
-    name = models.CharField(max_length=150)
+    name = models.CharField(max_length=200, unique=True)
     trash_container = models.CharField(
         max_length=18,
         choices=TRASH_CONTAINER_CHOICES,

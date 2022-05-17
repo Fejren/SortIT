@@ -1,10 +1,12 @@
 import Home from "./Home/Home";
+import Navbar from "./components/Navbar/Navbar";
 
 const App = () => {
   return (
-    <div>
+    <>
+      <Navbar />
       <Home />
-    </div>
+    </>
   );
 }
 

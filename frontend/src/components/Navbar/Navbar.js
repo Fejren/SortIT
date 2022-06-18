@@ -4,17 +4,17 @@ import Logo from '../../assets/images/logo.svg'
 
 const Navbar = () => {
   return (
-  <nav class="flex items-center justify-between flex-wrap bg-gray-700 p-6">
-    <div class="flex items-center flex-shrink-0 text-white mr-6">
-      <img src={Logo}>
+  <nav className="flex items-center justify-between flex-wrap bg-gray-700 p-6">
+    <div className="flex items-center flex-shrink-0 text-white mr-6">
+      <img src={Logo} alt={"Logo SortIT"}>
       </img>
-      <span class="font-semibold text-xl tracking-tight">SortIT</span>
+      <span className="font-semibold text-xl tracking-tight">SortIT</span>
     </div>
-    <div class="block lg:hidden">
+    <div className="block lg:hidden">
      
     </div>
-    <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
-      <div class="text-sm lg:flex-grow">
+    <div className="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
+      <div className="text-sm lg:flex-grow">
       </div>
     </div>
   </nav>

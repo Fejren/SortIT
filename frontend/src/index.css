@@ -2,9 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  height: 100vh;
+}
 
 body {
-  height: 90vh;
+  height: 100vh;
   margin: 0;
   color: #fff;
   background-color: #40B87C;
@@ -13,4 +16,9 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
 }

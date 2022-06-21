@@ -3,7 +3,7 @@ import React from 'react';
 const Footer = () => {
     return (
         <>
-            <footer className="
+            {/* <footer className="
              bg-gray-700
              text-center
              inset-x-0
@@ -14,7 +14,7 @@ const Footer = () => {
                     Wojciech Wola,
                     Bartosz Ziemba.
                 </p>
-            </footer>
+            </footer> */}
         </>
     );
 };

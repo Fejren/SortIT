@@ -7,7 +7,7 @@ const App = () => {
     <>
       <Navbar />
       <Home />
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 }

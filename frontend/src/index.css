@@ -18,7 +18,3 @@ body {
   -moz-osx-font-smoothing: grayscale;
   flex-direction: column;
 }
-
-main {
-  flex: 1;
-}

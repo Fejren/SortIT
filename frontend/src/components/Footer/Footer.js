@@ -3,18 +3,20 @@ import React from 'react';
 const Footer = () => {
     return (
         <>
-            {/* <footer className="
+            <footer className="
              bg-gray-700
              text-center
              inset-x-0
              bottom-0
-             p-4
+             p-5
+             mt-4
              ">
-                <p>Copyright &copy; {new Date().getFullYear()} Dawid Zaręba,
-                    Wojciech Wola,
-                    Bartosz Ziemba.
+                <p>
+                    Dawid Zaręba - programista,
+                    Wojciech Wola - grafik,
+                    Bartosz Ziemba - siedział na discordzie i dopingował (wymyślił nazwę).
                 </p>
-            </footer> */}
+            </footer>
         </>
     );
 };

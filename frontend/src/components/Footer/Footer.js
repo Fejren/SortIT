@@ -14,7 +14,7 @@ const Footer = () => {
                 <p>
                     Dawid Zaręba - programista,
                     Wojciech Wola - grafik,
-                    Bartosz Ziemba - siedział na discordzie i dopingował (wymyślił nazwę).
+                    Bartosz Ziemba - pomagał mentalnie (wymyślił nazwę).
                 </p>
             </footer>
         </>

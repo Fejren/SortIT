@@ -14,6 +14,15 @@ class Material(models.Model):
         return self.name
 
 
+class Message(models.Model):
+    # model for message from user <3
+    email = models.EmailField()
+    content = models.CharField(max_length=200)
+
+    def __str__(self):
+        return f'{self.email} przesyła wiadomość'
+
+
 class Trash(models.Model):
     TRASH_CONTAINER_CHOICES = [
         ('mixed waste', 'Mixed waste'),

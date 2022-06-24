@@ -126,6 +126,7 @@ CORS_ALLOWED_ORIGINS = [
     'http://localhost:3000',
 ]
 
+
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.0/howto/static-files/
 

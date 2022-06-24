@@ -1,9 +1,11 @@
 import React, {useState} from 'react'
 import {useForm} from 'react-hook-form'
+import axios from "axios";
 
 const Contact = () => {
-  const {register, handleSubmit, watch, errors} = useForm()
-  const onSubmit = data => {console.log(data)}
+  const { register, handleSubmit, formState: { errors } } = useForm();
+  const onSubmit = data => axios.post('http://127.0.0.1:8000/api/message/create', data)
+  console.log(errors);
 
   return (
     <>
@@ -21,7 +23,7 @@ const Contact = () => {
               </div>
               <div className='grid grid-cols-1 gap-5 '>
               <div className='mr-3'>
-                  <label for="content" className="block text-base text-gray-700 mb-1">Szukany przedmiot</label>
+                  <label className="block text-base text-gray-700 mb-1">Szukany przedmiot</label>
                   <input
                     type="text"
                     name="content"
@@ -35,7 +37,7 @@ const Contact = () => {
                   />
                 </div>
                 <div>
-                <label for="email" className="block text-base text-gray-700 mb-1">Twój e-mail</label>
+                <label className="block text-base text-gray-700 mb-1">Twój e-mail</label>
                   <input
                     type="email"
                     name="email"

@@ -2,11 +2,16 @@ import React, {useContext, useState} from 'react';
 import "react-widgets/styles.css";
 import Combobox from "react-widgets/Combobox";
 import {AppContext} from "../../AppContext/AppContext";
+import SearchResult from "./SearchResult";
 
 const SearchInput = () => {
   const {trashes} = useContext(AppContext)
   const [query, setQuery] = useState('')
-  console.log(query)
+
+  console.log(query.name)
+  // console.log(query.trash_container)
+
+
   return (
     <>
     <div className='grid place-items-center rounded m-10 align-middle'>
@@ -31,6 +36,7 @@ const SearchInput = () => {
           </p>
         </div>
       </div>
+      {query.name && <SearchResult query={query} />}
     </div>
     </>
   );

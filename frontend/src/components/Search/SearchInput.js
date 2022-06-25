@@ -6,6 +6,7 @@ import {AppContext} from "../../AppContext/AppContext";
 const SearchInput = () => {
   const {trashes} = useContext(AppContext)
   const [query, setQuery] = useState('')
+  console.log(query)
   return (
     <>
     <div className='grid place-items-center rounded m-10 align-middle'>

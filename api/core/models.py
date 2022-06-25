@@ -25,15 +25,15 @@ class Message(models.Model):
 
 class Trash(models.Model):
     TRASH_CONTAINER_CHOICES = [
-        ('mixed waste', 'Mixed waste'),
+        ('odpady zmieszane', 'Odpady zmieszane'),
         ('bio', 'BIO'),
-        ('paper', 'Paper'),
-        ('glass', 'Glass'),
-        ('plastic and metals', 'Plastic and metals'),
+        ('papier', 'Papier'),
+        ('szkło', 'Szkło'),
+        ('tworzywa sztuczne i metale', 'Tworzywa sztuczne i metale'),
     ]
     name = models.CharField(max_length=200, unique=True)
     trash_container = models.CharField(
-        max_length=18,
+        max_length=26,
         choices=TRASH_CONTAINER_CHOICES,
         default='mixed waste',
     )

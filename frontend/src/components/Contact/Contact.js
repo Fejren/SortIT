@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React from 'react'
 import {useForm} from 'react-hook-form'
 import axios from "axios";
 
@@ -60,8 +60,6 @@ const Contact = () => {
                 <p className="text-gray-700 text-base text-center">
                   Wysyłając zgadasz się na przetwarzanie danych osobowych (e-mail)
                 </p>
-                {errors.email && <p className="text-red-700 text-base text-center">Te pole jest wymagane</p>}
-                {errors.content && <p className="text-red-700 text-base text-center">Te pole jest wymagane</p>}
               </div>
             </form>
             </div>

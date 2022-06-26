@@ -43,7 +43,7 @@ class TrashAPITests(TestCase):
         material = sample_material(name='Tin')
         payload = {
             'name': 'Can',
-            'trash_container': 'mixed waste',
+            'trash_container': 'odpady zmieszane',
             'material': [material.id]
         }
         res = self.client.post(TRASH_URL, payload)
@@ -58,7 +58,7 @@ class TrashAPITests(TestCase):
     def test_create_trash_invalid(self):
         payload = {
             'name': '',
-            'trash_container': 'mixed waste',
+            'trash_container': 'odpady zmieszane',
         }
         res = self.client.post(TRASH_URL, payload)
 

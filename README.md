@@ -6,7 +6,7 @@ Jeżeli użytkownik nie znajdzie odpowiedzi, może wysłać wiadomość kontakto
 
 ## Technologie
 Projekt jest stworzony w oparciu o Django REST Framework oraz React:
-* Python 3.10 (pierwotnie 3.9)
+* Python 3.10
 * Django 4.0.4
 * React 18.1.0
 * Tailwindcss 3.0.24

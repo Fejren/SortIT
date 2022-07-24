@@ -24,11 +24,9 @@ $ git clone https://github.com/Fejren/SortIT.git
 ```
 Uruchamianie projekt:
 ```
-$ docker-compose build
 $ docker-compose up
 ```
 lub
 ```
-$ make build
 $ make up
 ```
